@@ -5,8 +5,24 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends React.Component {
   state = {
-    products,
+    products: [],
     detailProduct
+  };
+
+  componentDidMount = () => {
+    this.setProducts();
+  };
+
+  // Copying values; avoid getting references to prevent modifying original vals
+  setProducts = () => {
+    let tmp = [];
+    products.forEach(item => {
+      const singleItem = { ...item };
+      tmp = [...tmp, singleItem];
+    });
+    this.setState(() => {
+      return { products: tmp };
+    });
   };
 
   handleDetail = () => {

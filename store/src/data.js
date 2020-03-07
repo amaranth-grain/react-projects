@@ -5,7 +5,13 @@ export const products = [
     img: "img/pic01.jpg",
     price: 899,
     artist: "Angela",
-    info: "Conceptual piece that shows a bee's relationship with an apple tree",
+    info:
+      "Conceptual piece that shows a bee's relationship with an apple tree. \
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus lacus \
+       et justo luctus, id elementum mauris cursus. Quisque ut orci tortor. Maecenas \
+       consequat mi et ligula aliquet, eu condimentum nulla dictum. Fusce pellentesque \
+       faucibus tortor id iaculis. Sed vel purus in risus laoreet porttitor ac tempor tellus. \
+        Etiam blandit varius vestibulum.",
     inCart: false,
     count: 0,
     total: 0
@@ -70,10 +76,16 @@ export const products = [
 export const detailProduct = {
   id: 1,
   title: "All I want is your insect leg said the tree to the bee",
-  img: "img/pic01.png",
+  img: "img/pic01.jpg",
   price: 899,
   artist: "Angela",
-  info: "Conceptual piece that shows a bee's relationship with an apple tree",
+  info:
+    "Conceptual piece that shows a bee's relationship with an apple tree. \
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus lacus \
+   et justo luctus, id elementum mauris cursus. Quisque ut orci tortor. Maecenas \
+   consequat mi et ligula aliquet, eu condimentum nulla dictum. Fusce pellentesque \
+   faucibus tortor id iaculis. Sed vel purus in risus laoreet porttitor ac tempor tellus. \
+    Etiam blandit varius vestibulum.",
   inCart: false,
   count: 0,
   total: 0
