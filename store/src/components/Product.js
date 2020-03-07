@@ -20,14 +20,18 @@ class Product extends React.Component {
     return (
       <ProductCard className="col-9 mx-auto col-md-6 col-lg-4 my-4">
         <div className="card">
-          <div
-            className="img-container p-5"
-            onClick={() => console.log("Image clicked!")}
-          >
-            <Link to="/details">
-              <img src={img} alt="Product Image" className="card-img-top" />
-            </Link>
-          </div>
+          <ProductConsumer>
+            {data => (
+              <div
+                className="img-container p-5"
+                onClick={() => data.handleDetail(id)}
+              >
+                <Link to="/details">
+                  <img src={img} alt="Product Image" className="card-img-top" />
+                </Link>
+              </div>
+            )}
+          </ProductConsumer>
           {/* card footer */}
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0 text-capitalize">{title}</p>

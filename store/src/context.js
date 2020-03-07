@@ -25,12 +25,19 @@ class ProductProvider extends React.Component {
     });
   };
 
-  handleDetail = () => {
-    console.log("Handle detail");
+  getItem = id => {
+    return this.state.products.find(item => item.id === id);
   };
 
-  addToCart = () => {
-    console.log("Add to cart");
+  handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState(() => {
+      return { detailProduct: product };
+    });
+  };
+
+  addToCart = id => {
+    console.log(`Added ${id} to cart`);
   };
 
   render() {

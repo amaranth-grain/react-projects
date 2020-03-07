@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductConsumer } from "../context";
-import { ButtonRounded } from "./Button";
+import { ButtonRoundedDark, ButtonRoundedLight } from "./Button";
 import { Link } from "react-router-dom";
 
 class Details extends React.Component {
@@ -43,11 +43,17 @@ class Details extends React.Component {
                   </p>
                   {/* buttons */}
                   <Link to="/">
-                    <ButtonRounded>Back to Products</ButtonRounded>
+                    <ButtonRoundedLight className="text-capitalize">
+                      Back to Products
+                    </ButtonRoundedLight>
                   </Link>
-                  <Link to="/cart">
-                    <ButtonRounded>Add To Cart</ButtonRounded>
-                  </Link>
+                  <ButtonRoundedDark
+                    className="text-capitalize"
+                    disabled={inCart}
+                    onClick={() => data.addToCart(id)}
+                  >
+                    {inCart ? "inCart" : "add to cart"}
+                  </ButtonRoundedDark>
                   {/* end of buttons */}
                 </div>
                 {/* product text */}
