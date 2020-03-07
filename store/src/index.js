@@ -3,12 +3,16 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { ProductProvider } from "./context";
 import * as serviceWorker from "./serviceWorker";
+
 // Wrapping App with Router gives App access to routers
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ProductProvider>
+    <Router>
+      <App />
+    </Router>
+  </ProductProvider>,
   document.getElementById("root")
 );
 

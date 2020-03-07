@@ -8,7 +8,7 @@ class Navbar extends React.Component {
     return (
       <NavWrapper className="navbar navbar-expand-sm px-sm-5">
         <Link to="/">
-          <i class="fas fa-crow fa-2x"></i>
+          <i className="fas fa-crow fa-2x"></i>
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
@@ -25,7 +25,7 @@ class Navbar extends React.Component {
         <Link to="/cart" className="ml-auto">
           <ButtonContainer className="px-sm-2">
             <span className="mr-2">
-              <i class="fas fa-shopping-cart"></i>
+              <i className="fas fa-shopping-cart"></i>
             </span>
             Cart
           </ButtonContainer>
@@ -37,7 +37,8 @@ class Navbar extends React.Component {
 
 const NavWrapper = styled.nav`
   background-color: var(--darkGreen);
-  margin-top: 2vh;
+  margin-top: 4vh;
+  min-height: 12vh;
   .nav-link {
     color: var(--offWhite) !important;
     font-size: 1rem;

@@ -1,11 +1,14 @@
 import React from "react";
+import Title from "./Title";
 
 class About extends React.Component {
   render() {
     return (
-      <div>
-        <h3>All About Me</h3>
-      </div>
+      <React.Fragment>
+        <div className="py-5">
+          <Title title="About" />
+        </div>
+      </React.Fragment>
     );
   }
 }

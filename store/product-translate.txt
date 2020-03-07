@@ -1,0 +1,49 @@
+const ProductCard = styled.div`
+  .card {
+    border-color: transparent;
+    transition: all 0.6s linear;
+  }
+  .card-footer {
+    min-height: 15vh;
+    background: transparent;
+    border-top: transparent;
+  }
+  &:hover {
+    .card {
+      border: 0.04rem solid grey;
+      box-shadow: 2px 2px 5px 0px grey;
+    }
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-img-top {
+    transition: all 1s linear;
+  }
+  .img-container:hover .card-img-top {
+    transform: scale(1.5);
+  }
+  .cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--darkGreen);
+    border: none;
+    color: var(--offWhite);
+    font-size: 1.6rem;
+    border-radius: 0.5rem 0 0 0;
+    transform: translate(100%, 100%);
+    transition: all 1s linear;
+  }
+  .img-container:hover .cart-btn {
+    transform: translate(0, -0);
+  }
+  .cart-btn:hover {
+    transition: all 0.1s linear;
+    color: white;
+    background-color: var(--palmGreen);
+    cursor: pointer;
+  }
+`;

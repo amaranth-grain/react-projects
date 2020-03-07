@@ -1,5 +1,5 @@
 :root {
-  --darkGreen: #104710;
+  --darkGreen: #104727;
   --palmGreen: #5ca349;
   --oliveGreen: #cefc6b;
   --tintedGrey: rgb(216, 216, 216);
@@ -12,7 +12,7 @@
 }
 body {
   font-family: "Roboto", sans-serif !important;
-  background: white !important;
+  background: var(--offWhite) !important;
   color: var(--mainDark) !important;
 }
 .text-title {
