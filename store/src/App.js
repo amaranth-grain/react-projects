@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
+import Home from "./components/Home";
 import About from "./components/About";
 import Error from "./components/Error";
 

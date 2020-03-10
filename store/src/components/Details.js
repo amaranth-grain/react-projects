@@ -42,7 +42,7 @@ class Details extends React.Component {
                     {info}
                   </p>
                   {/* buttons */}
-                  <Link to="/">
+                  <Link to="/store">
                     <ButtonRoundedLight className="text-capitalize">
                       Back to Products
                     </ButtonRoundedLight>
