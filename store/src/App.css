@@ -1,14 +1,19 @@
 :root {
-  --darkGreen: #104727;
+  /* --darkGreen: #0e8080; */
+  /* --darkGreen: rgb(38, 59, 5); */
+  /* --darkGreen: rgb(112, 153, 8); */
+  --darkGreen: rgb(97, 168, 4);
+  /* --darkGreen: #104727; */
   --palmGreen: #5ca349;
-  --oliveGreen: #cefc6b;
+  --lightGreen: rgb(141, 192, 12);
   --tintedGrey: rgb(214, 214, 214);
   --mainTurquoise: #31a5a1;
   --mainTeal: #017e94;
   --offWhite: #eeeeee;
+  --mainGold: #ffd153;
   --mainBeige: rgb(224, 224, 214);
   --mainDark: #2b2c2e;
-  --mainGrey: rgb(110, 107, 107);
+  --mainGrey: rgb(160, 160, 160);
 }
 body {
   font-family: "Roboto", sans-serif !important;
@@ -31,4 +36,97 @@ body {
 }
 .fa-crow:hover {
   color: white;
+}
+#profilePic {
+  clip-path: ellipse(38% 42% at 48% 50%);
+}
+.test {
+  border: 1px solid black;
+  background-color: var(--tintedGrey);
+}
+.productCard {
+  animation-duration: 2s;
+}
+.aboutMe {
+  animation-duration: 2s;
+}
+.divAbout {
+  background-color: white;
+  padding: 0;
+  margin-top: 3em;
+  border-radius: 0.5em;
+}
+.cartItemPic {
+  width: 5em;
+  height: 5em;
+  overflow: auto;
+}
+.btnCart {
+  background: blue;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+.btnCart:hover {
+  background: var(--lightGreen) !important;
+  color: var(--offWhite);
+}
+.cartItem {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--palmGreen);
+}
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero {
+  background: url("hero.jpg") repeat scroll center center/cover;
+  height: 100vh;
+  width: 100%;
+}
+#hero .hero-content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-content h1 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 40%;
+  margin-left: 3vw;
+  color: #fff;
+}
+#heroShop {
+  width: 8em;
+  margin-left: 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--offWhite);
+  border: 1px solid var(--tintedGrey);
+  animation-duration: 3s;
+}
+#heroShop:hover {
+  background-color: var(--offWhite);
+  color: var(--mainDark);
+  border: 1px solid var(--offWhite);
+}
+.hero-content h1 {
+  animation-duration: 2s;
+  font-size: 4em;
+}
+/*  Navbar fixd page */
+.subpage-nav {
+  display: block !important;
+  position: relative;
+}
+.typed-items {
+  display: none;
 }

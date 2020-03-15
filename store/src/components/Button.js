@@ -17,6 +17,7 @@ export const ButtonContainer = styled.button`
 /* Dark Green -> Palm Green on hover */
 export const ButtonRoundedDark = styled.button`
   margin: 1rem;
+  min-width: 11rem;
   border: 1px solid var(--darkGreen);
   background-color: var(--darkGreen);
   padding: 0.6em 1.2em;
@@ -26,8 +27,28 @@ export const ButtonRoundedDark = styled.button`
   transition: all 0.4s ease-in-out;
   &:hover {
     color: var(--offWhite);
-    background-color: var(--palmGreen);
-    border-color: var(--palmGreen);
+    background-color: var(--lightGreen);
+    border-color: var(--lightGreen);
+  }
+  &:disabled {
+    background-color: var(--tintedGrey);
+    color: var(--mainGrey);
+    border: 1px solid var(--tintedGrey);
+  }
+`;
+
+export const ButtonPlain = styled.button`
+  margin: 1rem;
+  border: 1px solid var(--tintedGrey);
+  background-color: var(--tintedGrey);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  color: var(--mainDark);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: var(--darkGreen);
+    color: var(--offWhite);
+    font-weight: bold;
   }
 `;
 

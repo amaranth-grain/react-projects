@@ -6,13 +6,13 @@ import { ButtonContainer } from "./Button";
 class Navbar extends React.Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm px-sm-5">
+      <NavWrapper className="navbar navbar-expand navbar-light" id="main-nav">
         <Link to="/">
           <i className="fas fa-crow fa-2x"></i>
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
-            <Link to="/" className="nav-link">
+            <Link to="/products" className="nav-link">
               Products
             </Link>
           </li>
@@ -27,7 +27,7 @@ class Navbar extends React.Component {
             <span className="mr-2">
               <i className="fas fa-shopping-cart"></i>
             </span>
-            Cart
+            <span>Cart</span>
           </ButtonContainer>
         </Link>
       </NavWrapper>
@@ -37,18 +37,20 @@ class Navbar extends React.Component {
 
 const NavWrapper = styled.nav`
   background-color: var(--darkGreen);
-  margin-top: 4vh;
   min-height: 12vh;
+  span {
+    color: white !important;
+  }
   .nav-link {
-    color: var(--offWhite) !important;
+    color: white !important;
     font-size: 1rem;
     font-family: "Roboto" !important;
     border: 0.5px solid var(--darkGreen);
-    padding: 0.4rem 2rem;
   }
   .nav-link:hover {
     color: white !important;
-    border: 0.5px solid;
+    border: 0.5px solid white;
+    border-radius: 0.6rem;
   }
 `;
 
